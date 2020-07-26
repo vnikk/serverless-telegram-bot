@@ -29,7 +29,7 @@ def basketbot(request):
         text = msg.text
         if '/weather' in text:
             if len(text.split()) == 1:
-                reply = 'команда: /weather@basketbot пн|вт|ср|чт|пт|сб|вс'
+                reply = 'команда: /weather@{} пн|вт|ср|чт|пт|сб|вс'.format(os.environ['TELEGRAM_BOT_NAME'])
             else:
                 arg = text.split()[1].lower()
                 requested_day = days.index(arg)
