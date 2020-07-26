@@ -1,0 +1,33 @@
+{
+  "update_id": 693786848,
+  "channel_post": {
+    "message_id": 24,
+    "date": 1595768817,
+    "chat": {
+      "id": -1201158250397,
+      "type": "channel",
+      "title": "Chat name"
+    },
+    "text": "@botname /weather",
+    "entities": [
+      {
+        "type": "mention",
+        "offset": 0,
+        "length": 10
+      },
+      {
+        "type": "bot_command",
+        "offset": 11,
+        "length": 8
+      }
+    ],
+    "caption_entities": [],
+    "photo": [],
+    "new_chat_members": [],
+    "new_chat_photo": [],
+    "delete_chat_photo": "False",
+    "group_chat_created": "False",
+    "supergroup_chat_created": "False",
+    "channel_chat_created": "False"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "update_id": 693786859,
+  "message": {
+    "message_id": 182,
+    "date": 1595770393,
+    "chat": {
+      "id": 488668855,
+      "type": "private",
+      "first_name": "John"
+    },
+    "text": "/weather вт",
+    "entities": [
+      {
+        "type": "bot_command",
+        "offset": 0,
+        "length": 8
+      }
+    ],
+    "caption_entities": [],
+    "photo": [],
+    "new_chat_members": [],
+    "new_chat_photo": [],
+    "delete_chat_photo": "False",
+    "group_chat_created": "False",
+    "supergroup_chat_created": "False",
+    "channel_chat_created": "False",
+    "from": {
+      "id": 488668855,
+      "first_name": "John",
+      "is_bot": "False",
+      "language_code": "en"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-from main import webhook
+from main import basketbot
 
 import unittest
 from unittest.mock import patch
@@ -10,12 +10,19 @@ app = flask.Flask(__name__)
 
 
 class ClientTestCase(unittest.TestCase):
-    def test_webhook(self):
-        with open("test_message.json") as f:
+    def test_basketbot_channel(self):
+        with open("channel_request.json") as f:
             with patch.object(Bot, "sendMessage", return_value="test message"):
                 with app.test_request_context(method="POST", data=f):
                     r = flask.request
-                    webhook(r)
+                    basketbot(r)
+
+    def test_basketbot_personal(self):
+        with open("private_request.json") as f:
+            with patch.object(Bot, "sendMessage", return_value="test message"):
+                with app.test_request_context(method="POST", data=f):
+                    r = flask.request
+                    basketbot(r)
 
 
 if __name__ == "__main__":
